@@ -1,0 +1,47 @@
+/*estilos generales*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  height: 90vh;/*para coupar el 100% de la ventana*/
+  text-align: center;
+  display: flex;/*lo combierte tipo caja y los alinea verticalmente los items*/
+  /*para centrar horizontal y verticalmente se usa  justify-content: center; y align-items: center;*/
+  justify-content: center;/*justificar contenido: centra la caja en el body*/
+  align-items: center; /*alinear items = alinea los elementos horizontalmente*/
+  background-color: rgb(23, 41,56);
+}
+
+/*contenedores*/
+.contenedor-principal {
+  width: 50vw;/*equivale al 50% del ancho de la vista de la pantalla*/
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+}
+.color {
+  padding: 20px;
+  margin: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Arvo', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;/*añade espacion entre los distintos indicadores y los distribuye*/
+  align-items: center;
+}
+
+label,p {
+  margin: 20px;
+}
+input {
+  cursor:pointer;
+}
